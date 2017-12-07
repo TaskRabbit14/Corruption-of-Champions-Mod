@@ -1195,13 +1195,13 @@ package classes.Scenes
 			getGame().dynStats("lib", 4, "sen", 4);
 			getGame().dynStats("cor", 1);
 			
-			if (player.inte <= 20 && !( player.findPerk(PerkLib.BimboBrains) >= 0 )) {
+			if (player.inte <= 20 && !( player.findPerk(PerkLib.BimboBrains) > 0 )) {
 				outputText("A bubbly giggle bursts from your lips, which you then lick hungrily.  You, like, totally want some dick to suck!  Wow, that came out of left field.  You shake your head and try to clear the unexpected, like, words from your head but it's getting kind of hard.  Omigosh, you feel kind of like a dumb bimbo after, like, drinking that weird booze.  Oh, well, it doesn't matter anyhow – you can, like, still stop the demons and stuff.  You'll just have to show off your sexy bod until they're offering to serve you.\n\n");
 				outputText("<b>(Bimbo Brains - Perk Gained!)</b>\n\n");//int to 20.  max int 50)
 				player.createPerk(PerkLib.BimboBrains, 0, 0, 0, 0);
 				getGame().dynStats("cor", 1);
 			}
-			if (player.tone == 0 && player.hips.rating >= 12 && player.butt.rating >= 12 && player.biggestTitSize() >= 12 && player.hasVagina() && !player.hasCock() && !( player.findPerk(PerkLib.BimboBody) >= 0 )) {
+			if (player.tone == 0 && player.hips.rating >= 12 && player.butt.rating >= 12 && player.biggestTitSize() >= 12 && player.hasVagina() && !player.hasCock() && !( player.findPerk(PerkLib.BimboBody) > 0 )) {
 				
 				if (player.hair.color != "platinum blonde") {
 					outputText("You notice a change in your " + player.hairDescript() + ".  It starts with a tingling in your scalp and intensifies ");
